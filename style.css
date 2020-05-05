@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px;
+    color: black;
+}
+.contents{
+    
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    max-width: 600px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+
+}
+h3{
+}
