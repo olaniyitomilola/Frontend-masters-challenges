@@ -1,0 +1,135 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color:  hsl(229, 6%, 66%);
+  
+}
+.strong{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+    
+}
+header{
+
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+p{
+    font-weight: 200;
+    color:- hsl(229, 6%, 66%)
+
+}
+.container{
+    display: flex;
+    max-width: 1160px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.element{
+    position: relative;
+    max-width: 350px;
+    margin: 15px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+
+}
+.element p{
+    padding-right: 40px;
+}
+
+.top-red::after{
+    position: absolute;
+    background-color: hsl(0, 78%, 62%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    content: '';
+    height: 3px;
+    top: 0;
+    left: 0;
+   
+}
+.top-cyan::after{
+    position: absolute;
+    background-color: hsl(180, 62%, 55%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    content: '';
+    height: 3px;
+    top: 0;
+    left: 0;
+   
+}
+.top-blue::after{
+    position: absolute;
+    background-color: hsl(212, 86%, 64%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    content: '';
+    height: 3px;
+    top: 0;
+    left: 0;
+   
+}
+.top-orange::after{
+    position: absolute;
+    background-color: hsl(34, 97%, 64%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    content: '';
+    height: 3px;
+    top: 0;
+    left: 0;
+   
+}
+
+
+.icon{
+    float: right;
+}
+h3{
+    margin-top: 0px;
+    color: hsl(234, 12%, 34%);
+
+}
+.push{
+    transform: translateY(50%);
+}
+
+@media(max-width: 1155px){
+    .push{
+        transform: translateY(0);
+    }
+@media(max-width: 700px){
+    header{
+        max-width:390px;
+       
+    }
+    .calculator{
+        order: 2;
+    }
+
+}
+ 
