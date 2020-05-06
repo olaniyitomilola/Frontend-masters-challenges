@@ -87,8 +87,9 @@ h3{
     align-items: center;
     flex-wrap: wrap;
     max-width: 1100px;
-    margin-top: 100px
-    
+    margin-top: 100px;
+    margin: 0 auto;
+    margin-top: 50px
     ;
     }
 .main-items{
@@ -100,22 +101,36 @@ h3{
 .main-items img{
     margin-bottom: 20px;
 }
-}
+
 .modus-operandi{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 50px;
+   
 }
 .modus-item{
     max-width: 500px;
 }
  .modus-text{
      padding: 20px;
+     font-size: 16px;
  }
  .modus-text h1{
      padding-right: 120px;
+ }
+ @media(max-width:900px){
+     .modus-text h1{
+         padding-right: 0px;
+         font-size: 25px;
+         }
+     .modus-text p{
+         font-size: 18px;
+     }
+    
+    
  }
  .modus-text a{
      color: hsl(176, 68%, 64%);
@@ -224,9 +239,60 @@ h3{
         margin-bottom: 15px;
     }
 }
+
+.footer-annotations{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.annotation-elements{
+    width: 350px;
+    padding: 10px;
+}
+.foot-edit p{
+    margin-left: 15px;
+    padding-right:35px;
+}
+    
+.foot-edit{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.foot-edit img{
+    padding-top: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+
+}
 .footer{
 
     background-color: hsl(216, 53%, 9%);
     padding: 70px;
     padding-top: 150px;
+}
+.footer-icon{
+    width: 30px;
+    filter: invert(100%);
+    
+}
+.others{
+    padding: 5px;
+    padding-top: 30px;
+    font-size: 16px;
+}
+.listing{
+    width: 270px;
+}
+.social-icons{
+    filter: invert(100%);
+    width: 30px;
+    align-items: center;
+    padding: 3px;
+    float: right;
+    margin-left: 30px;
 }
