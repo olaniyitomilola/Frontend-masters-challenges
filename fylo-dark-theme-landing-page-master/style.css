@@ -8,20 +8,11 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: hsl(0, 0%, 100%);
+    background-color: hsl(218, 28%, 13%);
+
 
 }
-.main{
-    display: flex;
-    padding: 20px;
-    background-color: hsl(218, 28%, 13%);
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.main-items{
-  padding: 50px;
-   
-}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -46,12 +37,19 @@ body{
 }
 header{
     background-color:  hsl(217, 28%, 15%);
+    background-image: url(/fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:100% 20%;
     color: hsl(0, 0%, 100%);
     margin: 0 auto;
     padding: 30px;
     padding-right: 80px;
     width: 100%;
     text-align: center;
+}
+h3{
+    font-family: 'Raleway' sans-serif;
 }
 .illustration-intro{
     width: 100%;
@@ -66,7 +64,7 @@ header{
 }
 .header-call{
     width: 350px;
-    padding: 10px 80px 10px 80px;
+    padding: 20px 80px 20px 80px;
     font-family: 'raleway' sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -83,22 +81,151 @@ header{
     }
     
     }
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-top: 100px
+    
+    ;
+    }
+.main-items{
+    max-width: 500px;
+    text-align: center;
+    padding: 10px 80px 10px 80px;
+
+}
+.main-items img{
+    margin-bottom: 20px;
+}
+}
+.modus-operandi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.modus-item{
+    max-width: 500px;
+}
+ .modus-text{
+     padding: 20px;
+ }
+ .modus-text h1{
+     padding-right: 120px;
+ }
+ .modus-text a{
+     color: hsl(176, 68%, 64%);
+     text-decoration: none;
+     border-bottom: 1px solid hsl(176, 68%, 64%);
+     padding-bottom: 5px;
+ }
+.testimonial{
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-box{
+    position: relative;
+    width: 375px;
+    margin: 15px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px;
+    box-shadow: 5px 5px hsl(216, 53%, 9%);
+    color: whitesmoke;
+    border-radius: 5px;
+
 }
 
+.testimonial-image-image{
+    border-radius: 50%;
+    width: 30px;
+}
+.testimonial-image-name-and-title{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.testinomial-name-and-title{
+    margin-left: 20px;
+}
+.testimonial-name{
+    font-weight: 700;
+}
+.testimonial-title{
+    font-weight: 400;
+    font-size: 12px;
+}
+.one::after {
+    position: absolute;
+    content: ",";
+    top: -30px;
+    left: -10px;
+    background-image: url(/fylo-dark-theme-landing-page-master/images/bg-quotes.png);
+    height: 40px;
 
+    background-repeat: no-repeat;
+    width: 55px;
+}
+.call-to-action{
+    min-width: 380px;
+    max-width: 850px;
+    margin-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    padding: 30px;
+    box-shadow: 5px 5px hsl(216, 53%, 9%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    font-family: 'ralewafy' sans-serif;
+}
+.call-to-action p{
+    padding: 20px 115px 20px 115px;
+}
+.call-form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.call-input{
+    padding: 15px;
+    border-radius: 30px;
+    width: 60%;
+    outline: none;
+    font-size: 16px;
+}
+.call-button{
+   
+    border-radius: 30px;
+    outline: none;
+    width: 30%;
+    padding: 15px;
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+    color: white;
+    font-weight: 700;
 
-
-
-
-
-
-
-
-
-
-
-
+}
+@media(max-width:900px){
+    .call-button{
+        width: 90%;
+        font-size: 16px;
+    }
+    .call-input{
+        width: 90%;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
 .footer{
+
     background-color: hsl(216, 53%, 9%);
     padding: 70px;
     padding-top: 150px;
