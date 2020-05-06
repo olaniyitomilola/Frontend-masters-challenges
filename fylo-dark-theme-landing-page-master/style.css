@@ -9,8 +9,6 @@ body{
     font-size: 14px;
     color: hsl(0, 0%, 100%);
     background-color: hsl(218, 28%, 13%);
-
-
 }
 
 .navbar{
@@ -117,6 +115,10 @@ h3{
  .modus-text{
      padding: 20px;
      font-size: 16px;
+     width: 60;
+ }
+ .modus-illustrator{
+     text-align: center;
  }
  .modus-text h1{
      padding-right: 120px;
@@ -129,6 +131,9 @@ h3{
      .modus-text p{
          font-size: 18px;
      }
+     header{
+         background-image: url(/fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg);
+     }
     
     
  }
@@ -139,7 +144,9 @@ h3{
      padding-bottom: 5px;
  }
 .testimonial{
+    position: relative;
     margin-top: 150px;
+    margin-bottom: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -177,6 +184,8 @@ h3{
     font-weight: 400;
     font-size: 12px;
 }
+.one{
+}
 .one::after {
     position: absolute;
     content: ",";
@@ -184,22 +193,31 @@ h3{
     left: -10px;
     background-image: url(/fylo-dark-theme-landing-page-master/images/bg-quotes.png);
     height: 40px;
-
+    z-index: -2;
     background-repeat: no-repeat;
     width: 55px;
 }
+@media(max-width:900px){
+    .one::after {
+        top: -40px;
+        left: 0px;
+    }
+}
 .call-to-action{
-    min-width: 380px;
+    position: absolute;
+    min-width: 320px;
     max-width: 850px;
-    margin-top: 50px;
-    margin: 0 auto;
+    z-index: 3;
+    left: 20%;
+    margin-right: 25%;
+    transform: translateY(-35%);
     text-align: center;
     background-color: hsl(217, 28%, 15%);
     padding: 30px;
     box-shadow: 5px 5px hsl(216, 53%, 9%);
     color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    font-family: 'ralewafy' sans-serif;
+    font-family: 'raleway' sans-serif;
 }
 .call-to-action p{
     padding: 20px 115px 20px 115px;
@@ -238,6 +256,9 @@ h3{
         font-size: 16px;
         margin-bottom: 15px;
     }
+    .call-to-action p{
+        padding: 20px 0px 20px 0px;
+    }
 }
 
 .footer-annotations{
@@ -270,10 +291,11 @@ h3{
 
 }
 .footer{
-
+    position: relative;
+    z-index: 2;
     background-color: hsl(216, 53%, 9%);
     padding: 70px;
-    padding-top: 150px;
+    padding-top: 300px;
 }
 .footer-icon{
     width: 30px;
