@@ -29,6 +29,30 @@ body{
     align-items: center;
     font-size: 16px;
 }
+@media screen and (max-width:390px) {
+    .other-nav-elements{
+        font-size: 14px;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .nav-action{
+        padding: 0px 5px 0px 5px;
+    }
+    header{
+        background-image: url(/fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg);
+        background-position: bottom;
+        background-size:100% 20%;
+        color: hsl(0, 0%, 100%);
+        margin: 0 auto;
+        padding: 30px;
+        padding-right: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+}
 .logo{
     width: 30%;
 }
