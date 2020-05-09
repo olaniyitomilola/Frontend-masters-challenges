@@ -35,7 +35,7 @@ body{
     }
     .navbar{
         justify-content: space-between;
-        padding: 5px;
+        padding: 2px;
     }
     .nav-action{
         padding: 0px 5px 0px 5px;
@@ -46,10 +46,21 @@ body{
         background-size:100% 20%;
         color: hsl(0, 0%, 100%);
         margin: 0 auto;
-        padding: 30px;
+        padding: 10px;
         padding-right: 0px;
         width: 100%;
         text-align: center;
+    }
+    .modus-text h1{
+        padding-right: 0px;
+        font-size: 25px;
+        }
+    .modus-text p{
+        font-size: 18px;
+    }
+    .one::after {
+        top: -40px;
+        left: 0px;
     }
     
 }
@@ -150,26 +161,16 @@ h3{
      font-size: 16px;
      width: 60;
  }
- .modus-illustrator{
+ .modus-illustration img{
      text-align: center;
+     width:100%;
+ }
+
  }
  .modus-text h1{
      padding-right: 120px;
  }
- @media(max-width:900px){
-     .modus-text h1{
-         padding-right: 0px;
-         font-size: 25px;
-         }
-     .modus-text p{
-         font-size: 18px;
-     }
-     header{
-         background-image: url(/fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg);
-     }
-    
-    
- }
+
  .modus-text a{
      color: hsl(176, 68%, 64%);
      text-decoration: none;
@@ -187,7 +188,7 @@ h3{
 }
 .testimonial-box{
     position: relative;
-    width: 375px;
+    max-width: 375px;
     margin: 15px;
     background-color: hsl(219, 30%, 18%);
     padding: 30px;
@@ -230,12 +231,7 @@ h3{
     background-repeat: no-repeat;
     width: 55px;
 }
-@media(max-width:900px){
-    .one::after {
-        top: -40px;
-        left: 0px;
-    }
-}
+
 .call-to-action{
     position: absolute;
     min-width: 320px;
@@ -329,6 +325,7 @@ h3{
     background-color: hsl(216, 53%, 9%);
     padding: 70px;
     padding-top: 300px;
+    width: 100%;
 }
 .footer-icon{
     width: 30px;
