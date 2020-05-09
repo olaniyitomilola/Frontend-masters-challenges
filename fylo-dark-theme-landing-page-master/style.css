@@ -63,6 +63,15 @@ body{
         top: -40px;
         left: 0px;
     }
+    .header-call{
+        padding: 15px 70px 15px 70px;
+    }
+    .call-to-action{
+        position: absolute;
+        width: 320px;
+        margin: 0 auto;
+        left: 20px;        
+    }
     
 }
 .navbar .logo{
