@@ -44,11 +44,9 @@ body{
     header{
         background-image: url(/fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg);
         background-position: bottom;
-        background-size:100% 20%;
         color: hsl(0, 0%, 100%);
         margin: 0 auto;
         padding: 10px;
-        padding-right: 0px;
         width: 100%;
         text-align: center;
     }
@@ -65,13 +63,13 @@ body{
     }
     .header-call{
         width: 100%;
-        padding: 15px 70px 15px 70px;
+        padding: unset;
     }
     .call-to-action{
         position: absolute;
         width: 320px;
         margin: 0 auto;
-        left: 20px;        
+        left: 0px;        
     }
     
 }
