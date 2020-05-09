@@ -62,7 +62,7 @@ body{
         left: 0px;
     }
     .header-call{
-        padding: 10px 50px 10px 50px;
+        padding: 0px 50px 10px 60px;
     }
     .call-to-action{
         position: absolute;
@@ -113,6 +113,7 @@ h3{
 }
 .header-call{
     padding: 20px 120px 20px 120px;
+    text-align: center;
     font-family: 'raleway' sans-serif;
     font-weight: 700;
     font-size: 16px;
