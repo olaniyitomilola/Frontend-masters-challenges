@@ -1,3 +1,153 @@
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
+ *{
+     box-sizing: border-box;
+ }
+ h1,h3{
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+     color: hsl(192, 100%, 9%);
+ }
  
+ body{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 400,700;
+     min-width: 375px;
+     max-width: 1440px;
+     margin: 0 auto;
+ }
+ #top{
+     background-image: url(/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);
+     background-repeat: repeat;
+     background-size: contain;
+     background-color: hsl(193, 100%, 96%);
+     padding: 50px;
+     
+ }
+ .navbar{
+     padding: 15px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .nav-logo{
+    width: 30%;
+ }
+ .nav-logo img{
+    width: 150px;
+ }
+ .nav-button{
+    color: black;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ }
+ .header{
+     display: flex;
+     padding: 15px;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     align-items: center;
+   
+    
+ }
+ .head-one{
+     margin-top: 40px;
+     justify-items: center;
+     padding-right: 50px;
+     text-align: left;
+     
+ }
+ .header-illustrator{
+
+    
+ }
+ .header-illustrator img{
+     width: 90%;
+    
+ }
+ .header-btn{
+     padding: 17px 60px 17px 60px;
+     border-radius: 50px;
+     background-color: hsl(322, 100%, 66%);
+     color: white;
+ }
+.main-body{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.main-element{
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 40px;
+    padding: 30px;
+    flex-wrap: wrap-reverse;
+    border-radius: 20px;  
+}
+.main-element img{
+    width: 50%;
+
+}
+.element-1{
+    width: 50%;
+}
+#element-2{
+    flex-wrap: wrap-reverse;
+}
+.main-element-text{
+    color: hsl(208, 11%, 55%);
+    padding-right: 50px;
+}
+  
+
+
+
+
+
+
+ @media screen and (min-width:1440px){
+     
+     .navbar{
+        padding: 0px;
+        margin-top: 20px;
+     }
+     .header{
+         padding: 50px 0px 50px 0px;
+     }
+     .head-one{
+         width: 50%;
+     }
+     h1{
+        padding-right: 40%;
+    }
+    .main-element img{ margin-left: 50%;}
+     
+     
+     
+ }
+@media screen and (min-width:800px) and (max-width:1440px){
+    .head-one{
+        width: 50%;
+    }
+    h1{
+        padding-right: 10%;
+    }
+    .main-element img{ margin-left: 50%;}
+    
+}
+@media screen and (max-width: 800px){
+    .head-one{
+        width: 100%;
+        text-align: center;
+    }
+    #top{
+        padding: 20px;
+        background-image: url(/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-mobile.svg);
+    }
+    .element-1{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
