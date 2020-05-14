@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Bai Jamjuree', sans-serif;
-    min-width: 320px;
+    min-width: 300px;
     max-width: 1440px;
     font-size: 1.125em;
     margin: 0 auto;
@@ -24,6 +24,8 @@ header{
     margin: 0 auto;
     text-align: center;
     padding: 100px 50px 100px 50px;
+    background-image: url(/clipboard-landing-page-master/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
 }
 
 .header-form {
@@ -66,7 +68,7 @@ header{
     align-items: center;
 }
 .card-details{
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 
 }
 .card-image{
@@ -82,9 +84,84 @@ header{
 .card-properties p{
     width: 80%
 }
+.sub-body{
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+}
+.sub-body-1-image{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.sub-body-1-image img{
+    width: 100%;
 
+}
+.sub-elements-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+.sub-head-elements{
+    margin-top: 40px;
+}
+.sub-element{
+    padding-top: 20px;
+    margin: 20px;
 
+}
+.clients{
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.call-to-download{
+    padding: 40px;
+    text-align: center;
+}
+.call-form{
+    text-align: center;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color:hsla(201, 11%, 66%, 10%);
+}
 
+.footer-logo img{
+    width: 60px;
+}
+.footer-element{
+    width: 280px;
+    text-align: center;
+}
+.footer-element a{
+    padding-bottom: 40px;
+    text-decoration: none;
+    
+    color: hsl(210, 10%, 33%);
+}
+.footer-element a:hover{
+    color: hsl(171, 66%, 44%);
+}
+.push-foot{
+    padding-bottom: 50px;
+}
+.social-icon{
+    padding-right: 15px;
+}
 
 
 
@@ -106,6 +183,20 @@ header{
     .card-properties{
         text-align: left;
         padding-right: 20px;
+    }
+    .sub-body-1-image{
+        width: 60%;
+
+    }
+    .sub-element{
+        padding-top: 40px;
+        width: 30%;
+    }
+    .client-logo{
+        width: 20%;
+        text-align: center;
+     }
+
 }
 /*Devices from a big tablet to small sized laptop*/
 @media screen and (min-width: 768px) and (max-width:960px){
@@ -114,24 +205,53 @@ header{
         margin: 0 auto;
 
     }
+    .sub-body-1-image{
+        padding-top: 40px;
+ 
+    }
+    .social{
+         width: 100%;
+    }
+    .footer-logo{
+        width: 100%;
+    }
 
 }
 
 /* devices between normal android 6.0' phone and tablet*/
-@media screen and (min-width: 376px) and (max-width:767px){
+@media screen and (min-width: 375px) and (max-width:767px){
     header{
-        padding: 70px 35px 70px 35px;
+        padding: 50px 35px 50px 35px;
+        background-image: url(/clipboard-landing-page-master/images/bg-header-mobile.png);
+        background-size: cover;
     }
     .header-button{
         width: 100%;
         margin-top: 10px;
     }
-}
+    .sub-body-1-image{
+       padding-top: 40px;
 
-/* Screen size for my iphone to android*/
-@media screen and (min-width: 300px) and (max-width: 375px){
+    }
+    .client-logo{
+       width: 100%;
+       text-align: center;
+       padding-top: 30px;
+       padding-bottom: 50px;
+    }
+    .social{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 40px;
+    }
+   
+}
+ 
+/* Screen size for my iphoneSE*/
+@media screen and (min-width: 300px) and (max-width: 374px){
     header{
-        padding: 40px 5px 20px 5px;
+        padding: 10px 5px 10px 5px;
     }
     .header-button{
         width: 100%;
@@ -143,7 +263,8 @@ header{
     .main-body-text{
         padding: 10px;
     }
-        
-    
-
+    .sub-body-1-image img{
+        padding-top: 40px;
+ 
+    }
 }
