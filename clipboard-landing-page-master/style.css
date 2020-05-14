@@ -1,0 +1,149 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    min-width: 320px;
+    max-width: 1440px;
+    font-size: 1.125em;
+    margin: 0 auto;
+}
+p{
+    color:hsl(201, 11%, 66%);
+}
+
+h1,h2,h3{
+    color: hsl(210, 10%, 33%);
+
+}
+
+header{
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 50px 100px 50px;
+}
+
+.header-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header-button{
+    padding: 10px 50px 10px 50px;
+    margin: 5px 15px 0px 15px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    outline: none;
+}
+.header-button:hover{
+    cursor: pointer;
+}
+.button-ios{
+    background-color: hsl(171, 66%, 44%);
+}
+.button-mac{
+    background-color: hsl(233, 100%, 69%);
+}
+
+.main-body{
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.main-body-card{
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card-details{
+    padding-bottom: 40px;
+
+}
+.card-image{
+    width: 40%;
+    
+}
+.card-image img{
+    width: 100%;
+}
+
+ 
+}
+.card-properties p{
+    width: 80%
+}
+
+
+
+
+
+
+/*Big screens*/
+@media screen and (min-width: 961px){
+    .header-text{
+        width: 48%;
+        text-align: center;
+        margin: 0 auto;  
+    }
+    .main-body-text{
+        width: 48%;
+        text-align: center;
+        margin: 0 auto;  
+    }
+    .card-image{
+        transform: translateX(-15.5%);
+    }
+    .card-properties{
+        text-align: left;
+        padding-right: 20px;
+}
+/*Devices from a big tablet to small sized laptop*/
+@media screen and (min-width: 768px) and (max-width:960px){
+    .main-body-card{
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+}
+
+/* devices between normal android 6.0' phone and tablet*/
+@media screen and (min-width: 376px) and (max-width:767px){
+    header{
+        padding: 70px 35px 70px 35px;
+    }
+    .header-button{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Screen size for my iphone to android*/
+@media screen and (min-width: 300px) and (max-width: 375px){
+    header{
+        padding: 40px 5px 20px 5px;
+    }
+    .header-button{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .main-body-card{
+        padding-top: 10px;
+    }
+    .main-body-text{
+        padding: 10px;
+    }
+        
+    
+
+}
