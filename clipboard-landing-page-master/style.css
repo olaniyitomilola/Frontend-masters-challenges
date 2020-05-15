@@ -48,9 +48,15 @@ header{
 }
 .button-ios{
     background-color: hsl(171, 66%, 44%);
+    box-shadow: 2px 0px 3px hsl(171, 66%, 44%);
+    border-width: 0px;
 }
 .button-mac{
     background-color: hsl(233, 100%, 69%);
+    box-shadow: 2px 0px 3px hsl(233, 100%, 69%);
+    border-width: 0px;
+
+
 }
 
 .main-body{
@@ -142,6 +148,7 @@ header{
 
 .footer-logo img{
     width: 60px;
+
 }
 .footer-element{
     width: 280px;
@@ -237,13 +244,16 @@ header{
        width: 100%;
        text-align: center;
        padding-top: 30px;
-       padding-bottom: 50px;
+    
     }
     .social{
         width: 100%;
         text-align: center;
         justify-content: center;
         padding-top: 40px;
+    }
+    .footer-logo{
+        padding-bottom: 30px;
     }
    
 }
