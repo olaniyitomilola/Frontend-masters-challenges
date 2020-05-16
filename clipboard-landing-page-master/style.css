@@ -169,6 +169,12 @@ header{
 .social-icon{
     padding-right: 15px;
 }
+svg{
+    fill: hsl(210°, 10%, 33%);
+}
+svg:hover{
+    fill: hsl(171, 66%, 44%);
+}
 
 
 
