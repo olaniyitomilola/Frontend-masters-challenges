@@ -1,0 +1,11 @@
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+        box-sizing: border-box;
+    }
+    h1{
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
