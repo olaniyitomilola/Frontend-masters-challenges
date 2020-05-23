@@ -3,9 +3,27 @@
     *{
         box-sizing: border-box;
     }
-    h1{
+    h1, h2, h3{
         font-family: 'Poppins', sans-serif;
     }
     body{
         font-family: 'Open Sans', sans-serif;
+        min-width: 320px;
+        max-width: 1440px;
+        margin: 0 auto;
+
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+
+
+    @media screen and (min-width: 375px) and (max-width: 480px) {
+        body{
+            display: none;
+        }
     }
