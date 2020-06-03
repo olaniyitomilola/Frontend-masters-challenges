@@ -37,7 +37,7 @@
         padding: 25px;
         text-align: center;
     }
-    .jumbotron input{
+    .jumbo-button{
         margin-top: 30px;
         padding: 20px 70px 20px 70px;
         background-color: hsl(322, 100%, 66%);
@@ -48,6 +48,12 @@
         outline: none;
         cursor: pointer;
         box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    }
+    .jumbo-button:hover{
+        box-shadow: 0 3px 20px rgba(0,0,0,0.66), 0 3px 6px rgba(0,0,0,0.23);
+        background-color: white;
+        color:  hsl(322, 100%, 66%);
 
     }
     .jumbotron p{
@@ -92,23 +98,124 @@
         padding: 25px;
         margin-top: 50px;
     }
-    .main-element{
+    .main-element, .main-element-flow{
         display: flex;
         padding: 50px 0px 50px 0px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .main-element{
         flex-wrap: wrap;
+        background-color: hsl(207, 100%, 98%);
+
+
+    }
+    .main-element-flow{
+        flex-wrap: wrap-reverse;
+
     }
     .element-image{
-        width: 375px;
+        max-width: 360px;
+        padding-top: 70px;
+    }
+    .element-desc{
+        max-width: 360px;
+        padding-top: 70px;
     }
     .element-image img{
-        width: 80%;
+        width: 100%;
    
     }
+   .call-to-action{
+       margin-bottom: 90px;
+   }
+   .footer{
+       display: flex;
+       flex-wrap: wrap-reverse;
+       text-align: left;
+       padding: 25px;
+       justify-content: space-between;
+       background-color: hsl(192, 100%, 9%);
+       color: white;
+       align-items: baseline;
+   }
+   .footer-annotations, .newsletters{
+       max-width: 370px;
+       margin-bottom: 50px;
+   }
+   .form-email{
+       width: 100%;
+       height: 50px;
+       border-radius: 5px;
+   }
+   .form-submit{
+       float: right;
+       margin-top: 20px;
+       padding: 15px 50px 15px 50px;
+       background-color: hsl(322, 100%, 66%);
+       color: white;
+       border-radius: 5px;
+       border: 0px hsl(322, 100%, 66%);
+       font-weight: 700;
+       outline: none;
+       cursor: pointer;
+   }
+   .footer-logo{
+       margin-bottom: 30px;
+   }
+   .phone-number,.email-id{
+       margin-left: 25px;
+   }
+   .address{
+       margin-bottom: 30px;
+       font-weight: 400;
+   }
+   .phone,.email{
+       padding-bottom: 30px;
+   }
+   .social-icon svg{
+       fill: white;
+   }
+   .social-icon{
+       padding-right: 15px;
+       
+   }
+   .social-icons{
+       margin-top: 30px;
+   }
+   .grow-together{
+       background-image: url(/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-1.svg),url(/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-1.svg);
+       background-position: top, bottom;
+       background-repeat: no-repeat;
+       overflow: hidden;
+       
+   }
 
 
 
-    @media screen and (min-width: 375px) and (max-width: 480px) {
-        body{
-            display: none;
+
+    @media screen and (min-width: 1200px) {
+        .main-element{
+            justify-content: space-between;
+        }
+        .element-image, .element-desc{
+            max-width: 500px;
+        }
+        .element-desc{
+            text-align: justify;
+        }
+        .footer-annotations,.newsletters{
+            max-width: 500px;
+        }
+        .form-email{
+            width: 65%;
+
+        }
+        .form-submit{
+            float: inherit;
+            text-align: center;
+            width: 30%;
+
+            
         }
     }
