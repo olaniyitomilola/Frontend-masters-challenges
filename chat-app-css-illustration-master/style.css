@@ -15,7 +15,7 @@ body {
 }
 .phone-layout{
     padding: 10px;
-    width: 350px;
+    width: 320px;
     background-color: hsl(0, 0%, 100%);
     margin: 100px 50px 100px 30px;
     border-radius: 50px;
@@ -26,6 +26,8 @@ body {
     border-radius: 25px;
     margin: 5px;
     overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.05);
+
 }
 
 .app-heading{
@@ -86,19 +88,21 @@ body {
     color: hsl(276, 55%, 52%);
     padding: 15px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
+
 
 }
 .sender-side{
     color: hsl(271, 15%, 43%);
     font-size: 12px;
     font-weight: 400;
-    margin: 10px;
+    padding: 15px;
+
+  
+
 
 }
-.sender-side p{
-    background-color: ;
-}
+
 .media{
     display: flex;
     background-color: transparent;
@@ -108,7 +112,48 @@ body {
     margin-right: 10px;
     border-radius: 10px;
 }
+.payment-plan{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 10px;
+    padding: 10px;
+    color: hsl(0, 0%, 100%) ;
+    background-image: linear-gradient(to left,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    margin-bottom: 10px;
+    border-radius: 15px 15px 15px 0px;
 
+}
+.text-and-submit{
+    display: flex;
+    align-items: center;
+    margin-top: ;
+    margin: 20px 10px 10px 10px;
+    position: relative;
+}
+.text-and-submit input{
+    flex-grow: 2;
+    background-color:hsl(0, 0%, 100%);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.submit-button{
+    display: grid;
+    border: none;
+    outline: none;
+    background-color: black;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+
+}
+ion-icon { 
+    color: white;
+}
 .attribution { 
     font-size: 11px;
     text-align: center; 
